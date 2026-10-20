@@ -29,7 +29,7 @@ New to this? Read the [step-by-step guide](https://decodedxr.github.io/sheets-au
 
 - The tab re-sorts as soon as an edit is saved, so the row you just edited may jump to a new place. That's the point, but it can surprise people who are typing across a row. Fill in the sort column last, or sort on a column that's filled in last.
 - Only edits made by people trigger a sort. Rows added by Google Forms or other scripts get sorted on the next edit or with **Sort All Now**.
-- Formulas that refer to a specific row (like `=A5`) still point at row 5 after sorting. Formulas inside the sorted rows that refer to their own row move with the row.
+- Formulas elsewhere that point at a specific cell (like `=A5`) still point at A5 after sorting, whatever row is there now.
 - Prefer a sorted view that never changes the data? Use a `=SORT(...)` formula on another tab instead.
 
 ## More free Google tools
